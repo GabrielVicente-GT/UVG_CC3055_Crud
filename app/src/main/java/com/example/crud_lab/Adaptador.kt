@@ -31,7 +31,7 @@ class Adaptador(private val clickListener: (Int) -> Unit,private val longClickLi
     }
 
     fun cambiando(position: Int) {
-        items[position] = "Nuevo item"
+        items.set(position,"Elemento modificado")
         notifyDataSetChanged()
     }
 
